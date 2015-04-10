@@ -92,6 +92,14 @@ public class NavigationDrawerFragment extends Fragment {
 		setHasOptionsMenu(true);
 	}
 
+	final String[] fragments ={
+            "com.center.net.centernettools.fragment.AccountFragment",
+            "com.center.net.centernettools.fragment.",
+            "com.center.net.centernettools.fragment.",
+            "com.center.net.centernettools.fragment.",
+            "com.center.net.centernettools.fragment.",
+            "com.center.net.centernettools.fragment.",};
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -110,7 +118,11 @@ public class NavigationDrawerFragment extends Fragment {
 				android.R.id.text1, new String[] {
 						getString(R.string.title_section1),
 						getString(R.string.title_section2),
-						getString(R.string.title_section3), }));
+						getString(R.string.title_section3),
+						getString(R.string.title_section4),
+						getString(R.string.title_section5),
+						getString(R.string.title_section6),
+						getString(R.string.title_section7),}));
 		mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 		return mDrawerListView;
 	}
@@ -222,6 +234,8 @@ public class NavigationDrawerFragment extends Fragment {
 		}
 	}
 
+
+	
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
